@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Intro-Regular;
+	src: url(../fonts/Intro-Regular.otf);
+}
+
+@font-face {
+	font-family: Intro-Light;
+	src: url(../fonts/Intro-Light.otf);
+}
+
+body {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid;
+	border-color: rgba(255,255,255,0.50);
+	transition: 0.2s ease;
+}
+
+a:hover {
+	border-color: rgba(255,255,255,1);
+}
+
+.block {
+	width: 100%;
+}
+
+.block#cover {
+	background: url(../images/cover.png);
+	background-attachment: fixed;
+	padding: 200px 0px 200px 0px;
+}
+
+.block#cover hr {
+	margin: 20px 0 40px 0;
+	width: 250px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 2px;
+}
+
+#description {
+	color: white;
+	font-family: Intro-Light;
+	margin: 0px 10% 40px 10%;
+	font-size: 14pt;
+}
+
+h1 {
+	font-family: Intro-Regular;
+	font-size: 72pt;
+	color: white;
+	margin: 0 10% 0px 10%;
+}
+
+button#more {
+	height: 50px;
+	width: 250px;
+	border: 2px solid white;
+	background: none;
+	border-radius: 25px;
+	font-family: Intro-Light;
+	font-size: 14pt;
+	color: white;
+	margin-bottom: 200px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+button#more:hover {
+	background: white;
+	color: black;
+}
+.card {
+	background: white;
+	height: 400px;
+	font-family: Intro-Regular;
+	font-size: 16pt;
+	width: 33%;
+	vertical-align: baseline;
+	padding: 40px;
+	-webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.5s ease;
+	border-radius: 25px;
+}
+
+.card:hover {
+	transform: translate(0px, -20px) scale(1.02);
+	-webkit-box-shadow: 0px 15px 20px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    0px 15px 20px 10px rgba(0, 0, 0, 0.4);
+	box-shadow:         0px 15px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cards {
+	width: 100%;
+	border-spacing: 20px;
+}
+
+.card img {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+#list {
+	padding: 40px;
+	background: white;
+	border-radius: 25px;
+	font-family: Intro-Regular;
+	font-size: 14pt;
+	width: auto;
+	margin: 0 20px 0 20px;
+	-webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+	list-style-type: circle;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: Intro-Regular;
+	font-size: 42pt;
+	margin: 0 10% 0 10%;
+}

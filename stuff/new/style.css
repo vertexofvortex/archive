@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+
+html,
+body {
+    height: 100%;
+    margin: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.contentWrapper {
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
+
+/* MENU BAR */
+#menu {
+    width: 100%;
+    height: 50px;
+    /*background-color: rgba(0, 0, 0, 0.25);*/
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr;
+    color: white;
+}
+#menu .logoWrapper {
+    display: table;
+    max-height: 50px;
+}
+#menu .logoWrapper span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10vw;
+}
+#menu .buttonsWrapper {
+    padding-right: 10vw;
+}
+#menu .buttonsWrapper a {
+    float: right;
+    line-height: 50px;
+    min-width: 150px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 0 20px 0 20px;
+    color: white;
+    border-top: 5px solid tomato;
+    text-align: center;
+}
+
+/* COVER SECTION */
+#cover {
+    max-width: 100%;
+    height: 100%;
+    background-image: url(img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#cover .contentWrapper {
+    width: 60%;
+    height: 100%;
+    background: #131313;
+    padding: 0;
+    display: table;
+}
+#cover .contentWrapper .container {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 100%;
+    padding: 0 0 0 5vw;
+}
+#cover {
+    color: white;
+}
+#cover #intro {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#cover #nickname {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: tomato;
+}
+#cover #bio {
+    margin-top: 10px;
+}
+
+/*  */
+#hello {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(34, 34, 34);
+    border: 10px solid tomato;
+    color: white;
+}
+#hello .contentWrapper {
+
+}
+#hello .contentWrapper #about {
+    text-align: justify;
+    padding: 0 10vw 0 10vw;
+    margin-bottom: 100px;
+}
+#hello .contentWrapper #interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+}
+#hello .contentWrapper #interests.secondary {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#interests .card {
+    background: none;
+    padding: 20px;
+    height: fit-content;
+    background: tomato;
+    border-radius: 5px;
+}
+#interests .card img,
+#interests .card svg {
+    width: 100%;
+    height: inherit;
+    fill: white;
+}
+#interests .card div {
+    padding: 20px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 22px;
+}
+#interests .card h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+#interests .card p {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}

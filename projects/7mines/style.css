@@ -1,0 +1,332 @@
+/* Импорт шрифтов с Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:400,400i,700,700i');
+
+/* Стили для стандартных тегов */
+body {
+    margin: 0;
+    background: url(images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+p {
+    margin: 0 0 32px 0;
+}
+
+/* Стиль для <section> */
+.pageSection {
+    margin: 0 15% 40px 15%;
+}
+
+/* Стиль блока меню */
+.pageSection.menu {
+    margin: 0 0 40px 0;
+}
+
+/* Контейнер кнопок меню */
+.buttonContainer {
+    width: 100%;
+    min-height: 50px;
+    background: white;
+    text-align: right;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Логотип 7mines.ru */
+.logo {
+    float: left;
+    display: table-cell;
+    background: none;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+    font-size: 24px;
+}
+
+/* Кнопка меню */
+.menuButton {
+    display: table-cell;
+    height: 50px;
+    min-width: 170px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+/* Основной раздел */
+.mainBlock {
+    width: 100%;
+    min-height: 500px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 0;
+    /* background-image: url(images/background2.png); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+/* Контейнер CSS-сетки */
+.mainBlockColumnContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    height: 100%;
+}
+
+/* Колонка в отдельности */
+.mainBlockColumn {
+    background: none;
+    padding: 40px;
+    text-align: justify;
+    line-height: 20pt;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* Контейнер поля ввода никнейма */
+.nickInputWrapper {
+    padding: 0 40px 20px 0;
+}
+
+/* Поле ввода никнейма */
+.inputNickname {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.inputNickname::placeholder {
+    color: gray;
+    font-weight: normal;
+}
+
+/* Обёртка кнопки покупки */
+.formButtonWrapper {
+    padding-right: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* Кнопка покупки */
+.formButton {
+    width: unset;
+    padding: 0 20px 0 20px;
+    height: 50px;
+    border: 0;
+    border-radius: 50px;
+    background: rgb(42,212,29);
+    background: linear-gradient(194deg, rgba(42,212,29,1) 24%, rgba(28,214,175,1) 100%); 
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s cubic-bezier(0,.99, 1, 1);
+}
+.formButton:hover {
+    transform: scale(1.03);
+    background: linear-gradient(194deg, rgba(28,214,175,1) 24%, rgba(42,212,29,1) 100%); 
+}
+.formButton:active {
+    transform: scale(1);
+}
+
+/* Поле с IP-адресом */
+.serverIpWrapper {
+    padding: 0 40px 20px 0;
+}
+.serverIp {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 22px;
+    resize: none;
+}
+
+/* CSS-сетка карточек */
+.gridCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+/* Карточка в отдельности */
+.contactCard {
+    background: white;
+    border-radius: 15px;
+    height: 120px;
+    padding: 40px;
+    background-image: url(images/img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: contain;
+	transition: 0.1s cubic-bezier(0,.99, 1, 1);
+}
+.contactCard:hover {
+    transform: translateY(-1%) scale(1.01);
+}
+.contactCard:active {
+    transform: scale(1);
+}
+
+/* Стили для пустой карточки (хз зачем);
+   Бэкграунды различных карточек  */
+.contactCard.cardEmpty {
+    background: none;
+    transform: none;
+}
+.contactCard.rules {background-color: #f5dfb1; background-image: url(images/rules.png);}
+.contactCard.vkgroup {background-color: #81a5d4; background-image: url(images/vkgroup.png);}
+.contactCard.vkconf {background-color: #81a5d4; background-image: url(images/vkgroup.png);}
+.contactCard.discord {background-color: #9fafeb; background-image: url(images/discord.png);}
+.contactCard.worldmap {background-color: #5cbd6f; background-image: url(images/worldmap.png);}
+.contactCard.cmds {background-color: #60d6d6; background-image: url(images/cmds.png);}
+.contactCard.playertop {background-color: #e0cd6c; background-image: url(images/top.png);}
+
+/* Текст карточки */
+.contactCard p {
+    font-size: 16px;
+}
+
+/* Раздел футера */
+.footer {
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 40px 15% 40px 15%;
+    line-height: 24px;
+}
+
+/* CSS-сетка столбцов текста в футере */
+.gridFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Скриншоты */
+.gridScreenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 1450px) {
+    .pageSection {
+        margin: 0 5% 40px 5%;
+    }
+
+    .footer {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .pageSection {
+        margin: 0 40px 40px 40px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+@media screen and (max-width: 1100px) {
+    .pageSection.menu {
+        display: none;
+    }
+
+    .mainBlock {
+        margin-top: 40px;
+    }
+
+    .mainBlockColumn {
+        text-align: left;
+    }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .contactCard {
+        height: 8vh;
+        vertical-align: middle;
+
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainBlockColumnContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pageSection.main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .mainBlock {
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .mainBlockColumn {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .gridScreenshots {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pageSection.screenshots {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .contactCard p {
+        display: none;
+    }
+}

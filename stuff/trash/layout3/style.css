@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+html {
+    height: 100%;
+}
+body {
+    margin: 0px; 
+    height: 100%;
+}
+
+.pageSection {
+    background: #20262E;
+    padding: 50px 15% 0 15%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lato Black', sans-serif;
+    font-size: 42px;
+    margin-bottom: 36px;
+    margin-top: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.coverImage {
+    padding: 100px 0px 100px 0px;
+    background: url(images/coverImage.jpg) no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 100px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.blocksContainer {
+    width: 100%;
+    border-spacing: 10px;
+    animation: appear;
+}
+
+.block {
+    padding: 40px 20px;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    background: #2C3540;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: solid rgb(24, 29, 36) 3px;
+}
+
+.blockIcon {
+    width: 50%;
+}
+
+.blockText {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.block.project {
+    padding: 0 0 40px 0;
+}
+
+.blockImage.projects {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blockImage.projects.mcd {
+    background: url(images/darktheme.png);
+    background-position: center;
+}
+
+.blockImage.projects.grp {
+    background: rgb(35, 219, 96);
+    background: url(images/vkgroup.png);
+}
+
+.blockImage.projects.nnn {
+    background: rgb(35, 47, 219);
+}
+
+.blockTextDescription {
+    margin: 0 20px 0 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+p.blockTextDescription {
+    
+}
+
+.blockButton {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.blockButton.light {
+    background: #FFFFFF;
+    color: #20262E;
+}
+
+.blockButton.dark {
+    
+}
+
+.socials {
+    padding-bottom: 36px;
+}
+
+.buttonSocial {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 0 10px 0 10px;
+
+    transform: translate(0, 0) scale(1.00);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.buttonSocial:hover {
+    transform: translate(0, -10px) scale(1.02);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.buttonSocial.vk {
+    background: url(images/logoVk.svg);
+}
+
+.buttonSocial.fb {
+    background: url(images/logoFacebook.svg);
+}
+
+.buttonSocial.inst {
+    background: url(images/logoInstagram.svg);
+}
+
+.buttonSocial.blog {
+    width: auto!important;
+    vertical-align: top;
+    border-radius: 50px;
+    padding: 0 75px 0 75px;
+
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
